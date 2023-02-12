@@ -26,6 +26,12 @@ class Hewan {
 
 // inheritance
 class Anjing extends Hewan{
+    constructor(nama, umur, kaki){
+        super(nama, umur)
+
+        this.kaki = kaki
+    }
+
     suara(){
         console.log("Pake duit lu dulu yak");
     }
@@ -36,6 +42,7 @@ class Anjing extends Hewan{
     }
 }
 
-const anjing = new Anjing("Guguk", 5)
+const anjing = new Anjing("Guguk", 5, 4)
 anjing.info()
 anjing.suara()
+console.log(anjing.kaki);
