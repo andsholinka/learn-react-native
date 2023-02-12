@@ -30,6 +30,10 @@ class Anjing extends Hewan{
         console.log("Pake duit lu dulu yak");
     }
 
+    // overriding
+    info(){
+        console.log(`Saya adalah Anjing, nama saya adalah ${this.nama}`);
+    }
 }
 
 const anjing = new Anjing("Guguk", 5)
